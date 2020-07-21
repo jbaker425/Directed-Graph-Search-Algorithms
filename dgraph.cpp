@@ -170,8 +170,7 @@ void DGraph::BFS(int source) {
 		for (i = adjLists[n].begin(); i != adjLists[n].end(); i++) 
 		{
             x = indexOf(vertices, *i);
-			if (!visited[x] && x != -1) 
-			{ 
+			if (!visited[x] && x != -1) { 
 				visited[x] = true; 
 				queue.push_back(*i);
 			} 
